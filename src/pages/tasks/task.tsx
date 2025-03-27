@@ -34,7 +34,7 @@ const TaskPage = () => {
     if (taskIdString) {
       // Se taskId existir, é uma atualização
       try {
-        const updatedTask = await updateMutation.mutateAsync({
+        await updateMutation.mutateAsync({
           id: taskIdString,
           titulo: title,
           descricao: description,
@@ -48,7 +48,7 @@ const TaskPage = () => {
     } else {
       // Se taskId não existir, é uma criação
       try {
-        const newTask = await createMutation.mutateAsync({
+        await createMutation.mutateAsync({
           titulo: title,
           descricao: description,
         });

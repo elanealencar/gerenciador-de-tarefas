@@ -1,6 +1,7 @@
 import { trpc } from "../../utils/trpc";
 import { useRouter } from "next/router";
-import { useQueryClient } from "@tanstack/react-query";  // Importe o useQueryClient
+import { useQueryClient } from "@tanstack/react-query"; 
+import Image from "next/image";
 
 const TasksPage = () => {
   const router = useRouter();
@@ -24,6 +25,13 @@ const TasksPage = () => {
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-8">
+      < Image 
+        src="/images/logo.png"
+        alt="Logo" 
+        className="mx-auto mb-6 bg-blue-900"
+        style={{ width: "150px", height: "auto" }}
+       />
+
       <img 
         src="/images/logo.png"
         alt="Logo" 

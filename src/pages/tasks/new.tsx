@@ -13,7 +13,7 @@ const NewTaskPage = () => {
     e.preventDefault();
 
     try {
-      const newTask = await createMutation.mutateAsync({
+      await createMutation.mutateAsync({
         titulo: title,
         descricao: description,
       });
