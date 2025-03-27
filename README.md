@@ -2,29 +2,28 @@
 
 ## Descrição
 
-Este projeto é um **gerenciador de tarefas** que permite criar, listar, editar e excluir tarefas. Ele foi desenvolvido usando **React**, **TypeScript**, **Next.js** e **TRPC** para comunicação com o backend. O objetivo é fornecer uma interface simples e funcional para gerenciar tarefas de forma eficiente.
+Este projeto é uma aplicação em NextJS que simula um sistema simples de **gerenciador de tarefas** e permite criar, listar, editar e excluir tarefas. Ele foi desenvolvido usando **Next.js** e **tRPC** para comunicação com o backend. O objetivo é fornecer uma interface simples e funcional para gerenciar tarefas de forma eficiente.
+
+O projeto foi criado como parte de um desafio de processo seletivo. 
 
 ## Funcionalidades
 
-- **Cadastro de tarefas**: Permite criar novas tarefas, especificando título e descrição.
+- **Cadastro de tarefas**: Permite criar novas tarefas, especificando título e descrição. Cada tarefa possui um id (único, pode ser gerado automaticamente), titulo (string, obrigatório), descricao (string, opcional), e dataCriacao (timestamp).
 - **Edição de tarefas**: Permite editar tarefas existentes.
 - **Exclusão de tarefas**: Permite excluir tarefas com confirmação de ação.
 - **Listagem de tarefas**: Exibe a lista de todas as tarefas cadastradas.
-- **Interface Responsiva**: O layout é responsivo, garantindo uma boa experiência em dispositivos móveis.
 
 ## Tecnologias Usadas
 
-- **React**: Biblioteca para construção da interface de usuário.
-- **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código.
+- **TypeScript**: Adiciona tipagem estática ao código.
 - **Next.js**: Framework para React, com funcionalidades de renderização no servidor e roteamento.
-- **TRPC**: Biblioteca para comunicação direta entre o frontend e o backend sem a necessidade de uma API RESTful tradicional.
+- **tRPC**: Biblioteca para comunicação direta entre o frontend e o backend sem a necessidade de uma API RESTful tradicional.
 - **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
 - **Zod**: Biblioteca para validação de esquemas e dados.
 
 ## Requisitos
 
 - **Node.js** (versão 14 ou superior)
-- **npm** ou **yarn**
 
 ## Como rodar o projeto localmente
 
